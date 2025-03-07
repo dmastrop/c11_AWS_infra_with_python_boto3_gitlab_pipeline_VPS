@@ -35,8 +35,8 @@ def start_ec2_instances(aws_access_key, aws_secret_key, region_name, image_id, i
         ImageId=image_id,
         InstanceType=instance_type,
         KeyName=key_name,
-        MinCount=min_count,
-        MaxCount=max_count
+        MinCount=int(min_count),
+        MaxCount=int(max_count)
     )
     
     return response
