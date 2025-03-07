@@ -20,7 +20,7 @@ push:
 deploy:
   stage: deploy
   before_script:
-    - echo 'AWS_ACCESS_KEY='${AWS_ACCESS_KEY} >> .env
+    - echo 'AWS_ACCESS_KEY_ID='${AWS_ACCESS_KEY_ID} >> .env
     - echo 'AWS_SECRET_ACCESS_KEY='${AWS_SECRET_ACCESS_KEY} >> .env
     - echo 'region_name=us-east-1' >> .env
     - echo 'image_id=ami-0e1bed4f06a3b463d' >> .env
