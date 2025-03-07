@@ -9,7 +9,7 @@ load_dotenv()
 
 # Set variables
 # os.getenv will load from the .env. The .env will be created on the fly by the gitlab pipeline script
-aws_access_key = f'{os.getenv("AWS_ACCESS_KEY")}'
+aws_access_key = f'{os.getenv("AWS_ACCESS_KEY_ID")}'
 aws_secret_key = f'{os.getenv("AWS_SECRET_ACCESS_KEY")}'
 region_name = f'{os.getenv("region_name")}'
 image_id = f'{os.getenv("image_id")}'
